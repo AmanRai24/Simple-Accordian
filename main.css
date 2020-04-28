@@ -1,0 +1,43 @@
+body{
+    height: 100vh;
+    display: block;
+    justify-content: left;
+}
+.container{
+    width: 100%;
+}
+label{display: block;}
+
+.item1,.item2,.item3,.item4,.item5
+{
+    background:green ;
+    padding:10px;
+    border:.5px solid gray;
+    cursor:pointer;
+    color:white;
+    position:relative;
+}
+
+span{
+    position:absolute;
+    right:15px;
+    font-size:15px;
+}
+
+.contentBox1,.contentBox2,.contentBox3,.contentBox4,.contentBox5{
+    margin: 0 auto;
+    background:lightgray;
+    padding-left:10px;
+    height:0;
+    overflow:hidden;
+    transition: all .5s;
+}
+
+#item1:checked + .contentBox1,#item2:checked + .contentBox2,
+#item3:checked + .contentBox3,#item4:checked + .contentBox4,
+#item5:checked + .contentBox5{
+    padding:20px 0px 20px 10px;
+    height:auto;
+}
+
+input{display:none;}
